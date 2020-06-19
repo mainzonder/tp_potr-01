@@ -1,0 +1,18 @@
+<svg id="Scroll" xmlns="http://www.w3.org/2000/svg" width="27" height="46" viewBox="0 0 27 46">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #22222b;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <rect id="Round" class="cls-1" x="0.5" y="0.5" width="26" height="45" rx="13" ry="13"/>
+  <circle id="Ellipse_Small" data-name="Ellipse Small" class="cls-2" cx="13.5" cy="25.5" r="2"/>
+  <circle id="Ellipse" class="cls-1" cx="13.5" cy="13.5" r="3"/>
+</svg>
