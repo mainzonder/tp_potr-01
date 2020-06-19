@@ -1,5 +1,6 @@
 $dark: #22222b;
 $light: #faf9fe;
+$text: #7f7f82;
 
 body,
 html {
@@ -69,10 +70,118 @@ body {
     }
   }
 }
+.title-h2 {
+  font: {
+    size: 48px;
+    weight: 500;
+    margin-top: 0;
+  }
+}
 
 .btn-scroll {
   background-color: transparent;
   border: none;
   display: block;
   margin: 0 auto;
+}
+
+.section-about {
+  padding-top: 240px;
+}
+
+.box-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-item {
+    flex: 0 0 46%;
+    max-width: 46%;
+    position: relative;
+    &:first-child {
+      display: flex;
+      justify-content: flex-end;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -108px;
+  }
+  &__vertical {
+    position: absolute;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    bottom: 58px;
+    font: {
+      size: 16px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 45px;
+      background-color: $dark;
+      position: absolute;
+      right: 9px;
+      top: 93px;
+    }
+  }
+  &__text {
+    color: $text;
+    font: {
+      size: 16px;
+    }
+    line-height: 24px;
+  }
+}
+.progress-bar {
+  &-text {
+    font: {
+      size: 16px;
+      weight: 500;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-line {
+    width: 100%;
+    height: 2px;
+    background-color: $dark;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../img/circle-icon.png);
+      width: 6px;
+      height: 11px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 5.5px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      display: block;
+      height: 2px;
+      background-color: #f2f2f2;
+    }
+  }
+  &--indesign {
+    &::after {
+      width: 35%;
+    }
+  }
+  &--xd {
+    &::after {
+      width: 20%;
+    }
+  }
 }
